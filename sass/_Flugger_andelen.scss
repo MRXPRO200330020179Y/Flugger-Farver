@@ -1,0 +1,422 @@
+// Flugger andelen start
+
+.Flugger_andelen{
+    position: relative;
+
+    &__top{
+        display: flex;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    &__top__item{
+       background-color: #203264;
+       flex: 0 0 60%;
+       width: 60%;
+       position: relative;
+       height: 310px;
+    }
+
+    &__top__item__logo{
+        flex: 0 0 40%;
+        width: 40%;
+    }
+
+    &__top__item__img{
+        @include fiximg(100%,310px,true);
+    }
+
+    &__top__item__pro{
+       position: absolute;
+       padding-top: 30px;
+       padding-bottom: 30px;
+       top: 50%;
+       transform: translate(0,-50%);
+       -webkit-transform: translate(0,-50%);
+       -moz-transform: translate(0,-50%);
+       -ms-transform: translate(0,-50%);
+       -o-transform: translate(0,-50%);
+       padding-left: 181px;
+    }
+
+    &__top__item__menu{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    &__top__item__title__h2{
+        @include fontAll(44px,700,$text);
+        line-height: 120%;
+        max-width: 100%;
+        padding-right: 20px;
+        padding-top: 10px;
+        padding-bottom: 8px;
+    }
+
+    &__top__item__text{
+        @include fontAll(20px,700,$text);
+        line-height: 120%;
+        max-width: 100%;
+        padding-right: 20px;
+    }
+
+    &__pro__item{
+        width: 820px;
+        height: 480px;
+        padding: 40px 30px;
+        background-color: #162C5D;
+    }
+
+    &__pro{
+        position: relative;
+        margin-top: 70px;
+        margin-bottom: 40px;
+        display: flex;
+        align-items: flex-end;
+        flex-wrap: wrap;
+        grid-gap: 20px;
+    }
+
+    &__pro__item__logo{
+        padding-left: 110px;
+        padding-top: 80px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        @include fiximg(100%,310px,false);
+    }
+
+    &__pro__item__flex{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__pro__item__title__h3{
+        @include fontAll(45px,700,$text);
+        line-height: 120%;
+    }
+
+    &__pro__item__link{
+        border: 2px solid #FFFFFF;
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        -ms-border-radius: 50px;
+        -o-border-radius: 50px;
+        text-align: center;
+        line-height: 50px;
+
+        img{
+            width: 9px;
+            height: 15px;
+        }
+    }
+
+
+    &__pro__item__min{
+        background-color: $text;
+        width: 400px;
+        position: relative;
+        height: 480px;
+    }
+
+    &__pro__item__min__img{
+        @include fiximg(100%px,225px,true);
+        margin-bottom: 25px;
+    }
+
+    &__pro__item__min__title__h4{
+        @include fontAll(16px,700,#919191);
+        text-transform: uppercase;
+        padding-bottom: 10px;
+        padding-left: 30px;
+        padding-right: 20px;
+    }
+
+    &__pro__item__min__title__h3{
+        @include fontAll(20px,700,#000000);
+        padding-bottom: 5px;
+        padding-left: 30px;
+        padding-right: 20px;
+    }
+
+    &__pro__item__min__text{
+        @include fontAll(15px,normal,#5D5D5D);
+        padding-bottom: 100px;
+        padding-left: 30px;
+        padding-right: 20px;
+    }
+
+    &__pro__item__min__button{
+       position: absolute;
+       bottom: 30px;
+       left: 30px;
+    }
+
+    &__pro__item__min__link{
+        background-color: #0060A7;
+        border-radius: 125px;
+        -webkit-border-radius: 125px;
+        -moz-border-radius: 125px;
+        -ms-border-radius: 125px;
+        -o-border-radius: 125px;
+        padding: 15px;
+        @include fontAll(19px,700,$text);
+        display: inline-block;
+    }
+
+    &__button{
+        display: flex;
+        align-items: center;
+        margin-bottom: 80px;
+        justify-content: center;
+    }
+
+    &__button__link{
+        display: inline-block;
+        @include fiximg(50px,20px,true);
+    }
+
+    &__title__h2{
+        @include fontAll(28px,700,$blik);
+        text-align: center;
+        margin-top: 70px;
+    }
+
+    &__promax{
+        margin-top: 25px;
+    }
+}
+
+// Flugger andelen end
+
+
+@media (max-width:1650px){
+    .Flugger_andelen__top__item__pro{
+        padding-left: 30px;
+    }
+
+    .Flugger_andelen__pro{
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .Flugger_andelen__pro__item {
+        width: 775px;
+    }
+
+    .Flugger_andelen__pro__item__min {
+        width: 378px;
+    }
+}
+
+
+@media (max-width:1535px){
+    .Flugger_andelen__pro__item__min {
+        width: 350px;
+    }
+
+    .Flugger_andelen__pro__item {
+        width: 720px;
+    }
+    .Flugger_andelen__pro__item__logo {
+        padding-top: 20px;
+    }
+    .Flugger_andelen__pro__item__flex {
+        padding-top: 0px;
+        padding-bottom: 20px;
+    }
+}
+
+
+@media (max-width:1450px){
+    .Flugger_andelen__pro__item {
+        width: 680px;
+    }
+
+    .Flugger_andelen__pro__item__min {
+        width: 330px;
+    }
+}
+
+
+@media (max-width:1390px){
+    .Flugger_andelen__pro__item {
+        width: 660px;
+    }
+
+    .Flugger_andelen__pro__item__min {
+        width: 320px;
+    }
+}
+
+
+@media (max-width:1360px){
+    .Flugger_andelen__pro__item {
+        width: 100%;
+    }
+
+    .Flugger_andelen__pro__item__min {
+        width: 48%;
+    }
+
+    .Flugger_andelen__pro{
+        justify-content: space-between;
+    }
+
+    .Flugger_andelen__pro__item__flex {
+        padding-top: 20px;
+    }
+
+    .Flugger_andelen__pro__item {
+        height: auto;
+    }
+}
+
+
+@media (max-width:850px){
+    .Flugger_andelen__pro__item__logo {
+        padding-left: 60px;
+    }
+
+    .Flugger_andelen__pro__item__title__h3 {
+        font-size: 40px;
+    }
+
+    .Flugger_andelen__top__item {
+        flex: 0 0 70%;
+        width: 100%;
+    }
+
+    .Flugger_andelen__top__item__logo {
+        flex: 0 0 30%;
+        width: 30%;
+    }
+
+    .Flugger_andelen__top__item__title__h2 {
+        font-size: 40px;
+    }
+
+    .Flugger_andelen__top__item__text {
+        font-size: 20px;
+    }
+}
+
+
+@media (max-width:750px){
+    .Flugger_andelen__pro__item__logo {
+        padding-left: 60px;
+    } 
+
+    .Flugger_andelen__pro__item__logo {
+        padding-left: 20px;
+    }
+
+    .Flugger_andelen__pro__item__min {
+        width: 100%;
+    }
+
+    .Flugger_andelen__pro__item__min__img {
+        height: 300px;
+    }
+    .Flugger_andelen__pro__item__min{
+        height: auto;
+    }
+
+    .Flugger_andelen__pro__item__min__text {
+        padding-bottom: 100px;
+    }
+
+    .Flugger_andelen__pro__item__title__h3 {
+        font-size: 35px;
+    }
+
+    .Flugger_andelen__top__item__title__h2 {
+        font-size: 38px;
+    }
+
+    .Flugger_andelen__top__item__text {
+        font-size: 18px;
+    }
+}
+
+
+@media (max-width:650px){
+    .Flugger_andelen__pro {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+
+    .Flugger_andelen__top__item__text {
+        font-size: 16px;
+    }
+
+    .Flugger_andelen__top__item__title__h2 {
+        font-size: 30px;
+    }
+
+    .Flugger_andelen__button {
+        margin-bottom: 40px;
+    }
+
+    .Flugger_andelen__pro__item__title__h3 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width:550px){
+    .Flugger_andelen__pro__item__min__img {
+        height: 250px;
+    }
+
+    .Flugger_andelen__pro__item__title__h3 {
+        font-size: 28px;
+    }
+
+    .Flugger_andelen__top__item {
+        flex: 0 0 100%;
+        width: 100%;
+    }
+
+    .Flugger_andelen__top__item__logo {
+        flex: 0 0 0%;
+        width: 0%;
+    }
+}
+
+
+
+@media (max-width:450px){
+    .Flugger_andelen__pro__item__logo {
+        height: 200px;
+    }
+
+    .Flugger_andelen__pro__item__min__img {
+        height: 200px;
+    }
+
+    .Flugger_andelen__top__item__title__h2 {
+        font-size: 26px;
+    }
+}
+
+
+@media (max-width:360px){
+    .Flugger_andelen__pro__item__min__img {
+        height: 170px;
+    }
+
+    .Flugger_andelen__pro__item__logo {
+        height: 150px;
+    }
+
+    .Flugger_andelen__pro__item__title__h3 {
+        font-size: 24px;
+    }
+}
